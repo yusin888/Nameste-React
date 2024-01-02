@@ -2,12 +2,15 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 //React Element
-const jsxHeading = (
+const elem = <span>React Element</span>
+//React Element
+const title = (
   <h1 className="heading" tabIndex="1">
+    {elem}
     Nameste React using Jsx
   </h1>
 );
-console.log(jsxHeading);
+console.log(title);
 
 //React Element can be converted into a React component by adding arrow functions 
 const Title  = () => (<h1> Nameste react from  Title  component</h1>)
@@ -17,7 +20,10 @@ const Title  = () => (<h1> Nameste react from  Title  component</h1>)
 //component composition is also use for reusability
 const  HeadingComponent = () => ( 
   <div id="container">
-    <Title />               
+    {title}
+    <Title />   
+    <Title></Title>
+    {Title()}            
     <h1 className="heading" >
       Nameste React from functional component
     </h1>
