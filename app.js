@@ -1,3 +1,6 @@
+import React from 'react';
+import  ReactDOM  from 'react-dom/client';
+
 //Creating a nested structure in React
 const parent = React.createElement('div',{id:"parent"},
 React.createElement('div',{id:"child"},

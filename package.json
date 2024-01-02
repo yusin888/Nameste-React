@@ -1,0 +1,33 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "This basic react app",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yusin888/Nameste-React.git"
+  },
+  "keywords": [
+    "Nameste-React",
+    "Basic-React-concept"
+  ],
+  "author": "Yusin Ali Adan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yusin888/Nameste-React/issues"
+  },
+  "homepage": "https://github.com/yusin888/Nameste-React#readme",
+  "devDependencies": {
+    "parcel": "^2.10.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserslist": [
+    "last 3 versions"
+  ]
+}
