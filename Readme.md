@@ -2,7 +2,7 @@
 
 
 ## Percel
--Dev Build \n
+-Dev Build 
 -Local Server
 -HMR = HOT MODULE REPLACEMENT  
 -Use file watching algorithm to track changes
