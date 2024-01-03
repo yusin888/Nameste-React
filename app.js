@@ -1,34 +1,87 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-//React Element
-const elem = <span>React Element</span>
-//React Element
-const title = (
-  <h1 className="heading" tabIndex="1">
-    {elem}
-    Nameste React using Jsx
-  </h1>
-);
-console.log(title);
+// Headers
+// -logo
+// -nav-item
 
-//React Element can be converted into a React component by adding arrow functions 
-const Title  = () => (<h1> Nameste react from  Title  component</h1>)
+// body
+// -search
+// -Resturant container
+//     -Resturant Card
+//        -name , rating , cuisine ,
+// Footer
+// -Copyright
+// -links
+// -Address
+// -Contact
 
-//React component can either be (1) Class based component (2)Functional Component
-// Functional component - a function that returns a React Element or Jsx code 
-//component composition is also use for reusability
-const  HeadingComponent = () => ( 
-  <div id="container">
-    {title}
-    <Title />   
-    <Title></Title>
-    {Title()}            
-    <h1 className="heading" >
-      Nameste React from functional component
-    </h1>
-  </div>
-);
+const Header = () => {
+  return (
+    <div className="header">
+      <div className="logo-container">
+        {/* jsx does not work well with local image*/}
+        <img
+          className="logo"
+          src={require("./Public/logo1.png")}
+          alt="Image description"
+        />
+      </div>
+      <div className="nav-items">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Cart</li>
+        </ul>
+      </div>
+    </div>
+  );
+};
+
+const ResturantCard = () => {
+  return (
+    <div className="res-card" style={{ backgroundColor: "#f0f0f0" }}>
+      <img
+        className="res-logo"
+        src={require("./Public/images.jpg")}
+        alt="Biryani"
+      />
+      <h3>Meghana Food</h3>
+      <h4>Biryani North Indian, Asian</h4>
+      <h4>4.4 stars</h4>
+      <h4>38 minutes</h4>
+    </div>
+  );
+};
+const Body = () => {
+  return (
+    <div className="body">
+      <div className="search">Search</div>
+      <div className="res-container">
+        <ResturantCard />
+        <ResturantCard />
+        <ResturantCard />
+        <ResturantCard />
+        <ResturantCard />
+        <ResturantCard />
+        <ResturantCard />
+        <ResturantCard />
+        <ResturantCard />
+        <ResturantCard />
+      </div>
+    </div>
+  );
+};
+
+const AppLayout = () => {
+  return (
+    <div className="App">
+      <Header />
+      <Body />
+    </div>
+  );
+};
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<HeadingComponent/>);
+root.render(<AppLayout />);
