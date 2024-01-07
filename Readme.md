@@ -19,3 +19,20 @@
 -HTTPS support
 -Tree Shaking - remove unused code
 -different dev and prode bundles
+
+
+## Nameste Food - Food Ordering App Structure
+// Headers
+// -logo
+// -nav-item
+
+// body
+// -search
+// -Resturant container
+//     -Resturant Card
+//        -name , rating , cuisine ,
+// Footer
+// -Copyright
+// -links
+// -Address
+// -Contact
