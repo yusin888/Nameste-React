@@ -36,3 +36,9 @@
 // -links
 // -Address
 // -Contact
+
+## React Hooks
+-They are normal JS function that are pre-built in React
+-Most useful Hooks are :
+    -useState()
+    -useEffect()
